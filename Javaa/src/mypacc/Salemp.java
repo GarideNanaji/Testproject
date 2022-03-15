@@ -1,6 +1,6 @@
 package mypacc;
 
-public class Salemp extends Emp {
+public class Salemp extends Emp implements Demo1Interface {
 	int Sal;
 
 	public Salemp() {
@@ -15,8 +15,15 @@ public class Salemp extends Emp {
 	}
 	public String toString() {
 		String info=super.toString();
-		info+="EmpSal:="+Sal;
+		info+="\nEmpSal:="+Sal;
 		return info;
+	}
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		System.out.println("inform about empp");
+		System.out.println("================");
 	}
 
 }

@@ -1,9 +1,15 @@
 package mypacc;
+interface DemoInterface{
+	void display();
+}
+interface Demo1Interface{
+	void show();
+}
 
-public class Emp {
-	int eno;
-	String ename;
-	String eloc;
+public abstract class Emp {
+	private int eno;
+	private String ename;
+	private String eloc;
 
 	public Emp() {
 		// TODO Auto-generated constructor stub
@@ -16,7 +22,7 @@ public class Emp {
 		this.ename=ename;
 		this.eloc=eloc;
 	}
-
+	
 	
 	public String toString() {
 		String info="\nEno:="+eno;

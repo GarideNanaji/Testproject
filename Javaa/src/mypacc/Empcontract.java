@@ -1,6 +1,6 @@
 package mypacc;
 
-public class Empcontract extends Emp {
+public class Empcontract extends Emp implements DemoInterface {
 	int Contracttime;
 
 	public Empcontract() {
@@ -14,8 +14,15 @@ public class Empcontract extends Emp {
 	}
 	public String toString() {
 		String info=super.toString();
-		info+="Empcontract:="+Contracttime;
+		info+="\nEmpcontract:="+Contracttime;
 		return info;
+	}
+
+	@Override
+	public void display() {
+		System.out.println("information about Emp");
+		System.out.println("=========");
+		
 	}
 
 }
